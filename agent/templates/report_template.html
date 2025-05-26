@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ symbol }} Token Report</title>
+  <style>
+    body{font-family:sans-serif;max-width:750px;margin:auto;line-height:1.6}
+    h2{border-bottom:1px solid #ccc;padding-bottom:.3em}
+    img{max-width:100%}
+    .note{font-size:.9em;color:#666}
+  </style>
+</head>
+<body>
+<h1>{{ symbol }} — 多维度分析报告</h1>
+{{ body|safe }}
+<p class="note">报告生成时间：{{ now }}</p>
+</body>
+</html>

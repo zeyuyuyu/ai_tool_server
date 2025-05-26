@@ -1,0 +1,9 @@
+fastapi>=0.111
+uvicorn[standard]>=0.29
+sqlalchemy>=2.0
+pydantic>=2.7
+python-dotenv>=1.0
+openai>=1.23
+anthropic>=0.25
+unifai-sdk-py>=0.8
+psycopg2-binary>=2.9
