@@ -39,7 +39,7 @@ async def chat_completion(
 
         if not stream:
             if (cached := cache_get(key)):
-                return cached  # 🔸 命中缓存直接返回
+                return cached  #  命中缓存直接返回
 
         headers = {"anthropic-beta": "token-efficient-tools-2025-02-19"}
         resp = anthropic_client.messages.create(
@@ -57,7 +57,7 @@ async def chat_completion(
                     yield chunk
             return agen()
 
-        # 🔸 非流式：写入缓存并返回
+        #  非流式：写入缓存并返回
         cache_set(key, resp.model_dump(mode="python"))
         return resp
 
