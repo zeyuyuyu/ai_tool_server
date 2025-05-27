@@ -12,7 +12,7 @@ import anthropic
 import orjson
 
 from config import get_settings
-from cache import get as cache_get, set as cache_set  # 🔸 新增
+from cache import get as cache_get, set as cache_set  
 
 settings = get_settings()
 
